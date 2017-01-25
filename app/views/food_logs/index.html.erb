@@ -10,6 +10,7 @@
       <th>Carbs(grams)</th>
       <th>Fat(grams)</th>
       <th>Weight(grams)</th>
+      <th>Date</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -24,6 +25,7 @@
         <td><%= food_log.carbs %></td>
         <td><%= food_log.fat %></td>
         <td><%= food_log.weight %></td>
+        <td><%= food_log.created_at.to_time %></td>
         <td><%= link_to 'Show', food_log, class: 'btn btn-info' %></td>
         <td><%= link_to 'Edit', edit_food_log_path(food_log), class: 'btn btn-warning' %></td>
         <td><%= link_to 'Delete', food_log, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
