@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @food_log.name %>
+</p>
+
+<p>
+  <strong>Entry:</strong>
+  <%= @food_log.entry %>
+</p>
+
+<p>
+  <strong>Calories:</strong>
+  <%= @food_log.calories %>
+</p>
+
+<p>
+  <strong>Protein:</strong>
+  <%= @food_log.protein %>
+</p>
+
+<p>
+  <strong>Carbs:</strong>
+  <%= @food_log.carbs %>
+</p>
+
+<p>
+  <strong>Fat:</strong>
+  <%= @food_log.fat %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @food_log.weight %>
+</p>
+
+<%= link_to 'Edit', edit_food_log_path(@food_log) %> |
+<%= link_to 'Back', food_logs_path %>
